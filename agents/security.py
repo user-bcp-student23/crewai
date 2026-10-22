@@ -125,7 +125,7 @@ def build_task(feature: dict) -> Task:
     return Task(description=INSTRUCTIONS + "\nFeature: " + str(feature.get("title", ""))
                 + "\n" + str(feature.get("description", ""))
                 + "\n" + str(feature.get("acceptance_criteria", [])),
-                expected_output="Contenido completo de security_report.md en Markdown, "
+                expected_output="Contenido completo de security_report.md en Markdown con hallazgos, correcciones y comprobaciones, "
                                 "alineado con el Issue y sus criterios: resumen ejecutivo, "
                                 "alcance, modelo de amenazas y matriz de cobertura; "
                                 "hallazgos priorizados con ID, severidad y confianza "
